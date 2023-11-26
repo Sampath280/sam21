@@ -1,0 +1,28 @@
+{
+    "routes": [
+      {
+        "route": "/",
+        "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/about",
+        "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/contact",
+        "allowedRoles": ["anonymous"]
+      },
+      {
+        "route": "/profile*",
+        "allowedRoles": ["authenticated"]
+      }
+    ],
+    "navigationFallback": {
+      "rewrite": "/index.html"
+    },
+    "globalHeaders": {
+      "cache-control": "no-store, must-revalidate"
+    },
+    "trailingSlash": "auto"
+  }
+  
